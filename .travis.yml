@@ -7,5 +7,5 @@ before-install:
     - docker build -t NirmalBarik1/docker-react -f Dockerfile.dev .
 
 script: 
-    - docker run -e CI=true NirmalBarik1/docker-react npm run test
+    - docker run NirmalBarik1/docker-react npm run test -- --coverage
 
